@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Soundboard Grid</title>
+  <style>
+    .buttonGrid {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .swampButton {
+      background-color: green;
+      color: white;
+      font-size: 16px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .swampButton:active {
+      background-color: darkgreen;
+    }
+
+    /* Disclaimer styling */
+    .disclaimer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="buttonGrid">
+    <button id="button1" class="swampButton">Little Donkey</button>
+    <button id="button2" class="swampButton">Doesn't That Bother You?</button>
+    <button id="button3" class="swampButton">No Wonder You Don't Have Friends</button>
+    <button id="button4" class="swampButton">Shut Up</button>
+    <button id="button5" class="swampButton">I'm Not Gonna Eat Ya</button>
+    <button id="button6" class="swampButton">Vine Boom</button>
+    <button id="button7" class="swampButton">Pump Shotgun (Fortnite Loud)</button>
+    <button id="button8" class="swampButton">Mmm Cheezburger</button>
+    <button id="button9" class="swampButton">Thick of It (Thomas)</button>
+    <button id="button10" class="swampButton">Obama Beatbox</button>
+    <button id="button11" class="swampButton">He Need Some Milk</button>
+    <button id="button12" class="swampButton">NUT</button>
+
+    <button id="button13" class="swampButton">Supa Hot Fire</button>
+    <button id="button14" class="swampButton">Huh Cat Meme</button>
+    <button id="button15" class="swampButton">Rizz Sound Effect</button>
+    <button id="button16" class="swampButton">Whopper Daft Punk</button>
+    <button id="button17" class="swampButton">Loud Clash Royale</button>
+    <button id="button18" class="swampButton">Legalize Nuclear Bombs</button>
+    <button id="button19" class="swampButton">Sad Violin</button>
+    <button id="button20" class="swampButton">Drip Goku</button>
+    <button id="button21" class="swampButton">What?</button>
+    <button id="button22" class="swampButton">I Farted and a Poopy Almost Slipped Out</button>
+  </div>
+
+  <!-- Audio clips -->
+  <audio id="audio1" src="https://storage.googleapis.com/soundboards/Cartoons/SHREK/MP3/LITTLE%20DONKEY%20-%20AUDIO%20FROM%20JAYUZUMI.COM.mp3"></audio>
+  <audio id="audio2" src="https://storage.googleapis.com/soundboards/Cartoons/SHREK/MP3/DOESN'T%20THAT%20BOTHER%20YOU%20-%20AUDIO%20FROM%20JAYUZUMI.COM.mp3"></audio>
+  <audio id="audio3" src="https://storage.googleapis.com/soundboards/Cartoons/SHREK/MP3/WELL%20IT'S%20NO%20WONDER%20YOU%20DON'T%20HAVE%20ANY%20FRIENDS%20-%20AUDIO%20FROM%20JAYUZUMI.COM.mp3"></audio>
+  <audio id="audio4" src="https://storage.googleapis.com/soundboards/Cartoons/SHREK/MP3/SHUT%20UP%20-%20AUDIO%20FROM%20JAYUZUMI.COM.mp3"></audio>
+  <audio id="audio5" src="https://storage.googleapis.com/soundboards/Cartoons/SHREK/MP3/LOOK%20I'M%20NOT%20GONNA%20EAT%20YA%20-%20AUDIO%20FROM%20JAYUZUMI.COM.mp3"></audio>
+  <audio id="audio6" src="https://soundboardguys.com/sound-file-download?file-name=vine-boom.mp3"></audio>
+  <audio id="audio7" src="https://soundboardguys.com/sound-file-download?file-name=pump-shotgun-fortnite-loud.mp3"></audio>
+  <audio id="audio8" src="https://soundboardguys.com/sound-file-download?file-name=mmm-cheezburger.mp3"></audio>
+  <audio id="audio9" src="https://soundboardguys.com/sound-file-download?file-name=thick-of-it-thomas-the-train.mp3"></audio>
+  <audio id="audio10" src="https://soundboardguys.com/sound-file-download?file-name=obama-beatbox.mp3"></audio>
+  <audio id="audio11" src="https://soundboardguys.com/sound-file-download?file-name=heNeedSomeMilk.mp3"></audio>
+  <audio id="audio12" src="https://soundboardguys.com/sound-file-download?file-name=nut.mp3"></audio>
+
+  <audio id="audio13" src="https://soundboardguys.com/sound-file-download?file-name=supa-hot-fire.mp3"></audio>
+  <audio id="audio14" src="https://soundboardguys.com/sound-file-download?file-name=huh-cat-meme.mp3"></audio>
+  <audio id="audio15" src="https://soundboardguys.com/sound-file-download?file-name=rizz-sound-effect.mp3"></audio>
+  <audio id="audio16" src="https://soundboardguys.com/sound-file-download?file-name=whopper-daft-punk.mp3"></audio>
+  <audio id="audio17" src="https://soundboardguys.com/sound-file-download?file-name=loud-clash-royale.mp3"></audio>
+  <audio id="audio18" src="https://soundboardguys.com/sound-file-download?file-name=legalize-nuclear-bombs.mp3"></audio>
+  <audio id="audio19" src="https://www.myinstants.com/media/sounds/tf_nemesis.mp3"></audio>
+  <audio id="audio20" src="https://www.myinstants.com/media/sounds/drip-goku-meme-song-original-dragon-ball-super-music-clash-of-gods-in-description.mp3"></audio>
+  <audio id="audio21" src="https://www.myinstants.com/media/sounds/what-bottom-text-meme-sanctuary-guardian-sound-effect-hd.mp3"></audio>
+  <audio id="audio22" src="https://www.myinstants.com/media/sounds/i-farted-and-a-poopy-almost-slipped-out.mp3"></audio>
+
+  <script>
+    const buttons = [
+      {id: 'button1', audio: 'audio1'},
+      {id: 'button2', audio: 'audio2'},
+      {id: 'button3', audio: 'audio3'},
+      {id: 'button4', audio: 'audio4'},
+      {id: 'button5', audio: 'audio5'},
+      {id: 'button6', audio: 'audio6'},
+      {id: 'button7', audio: 'audio7'},
+      {id: 'button8', audio: 'audio8'},
+      {id: 'button9', audio: 'audio9'},
+      {id: 'button10', audio: 'audio10'},
+      {id: 'button11', audio: 'audio11'},
+      {id: 'button12', audio: 'audio12'},
+      {id: 'button13', audio: 'audio13'},
+      {id: 'button14', audio: 'audio14'},
+      {id: 'button15', audio: 'audio15'},
+      {id: 'button16', audio: 'audio16'},
+      {id: 'button17', audio: 'audio17'},
+      {id: 'button18', audio: 'audio18'},
+      {id: 'button19', audio: 'audio19'},
+      {id: 'button20', audio: 'audio20'},
+      {id: 'button21', audio: 'audio21'},
+      {id: 'button22', audio: 'audio22'}
+    ];
+
+    buttons.forEach(b => {
+      const btn = document.getElementById(b.id);
+      const aud = document.getElementById(b.audio);
+      btn.addEventListener('click', () => {
+        aud.currentTime = 0;
+        aud.play();
+      });
+    });
+  </script>
+
+  <!-- ⭐ UPDATED DISCLAIMER ⭐ -->
+  <p class="disclaimer">
+    Disclaimer: I do not own any of the audio, memes, or characters featured on this soundboard. 
+    All rights belong to their respective creators.
+  </p>
+
+</body>
+</html>
